@@ -5,9 +5,8 @@ function markAsDone(todos) {
     while (i < todos.length){
     todos[i] = "done - " + todos[i];
     i++;
- }
- return todos.join('<br>');
+    }
+    return todos;
 }
 
-document.getElementById('result').innerHTML = markAsDone(todos);
-
+document.getElementById('result').innerHTML = markAsDone(todos).join('<br>');
